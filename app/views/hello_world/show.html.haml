@@ -4,6 +4,6 @@
 .container
 	= form_tag(hello_world_api_path, method: :post, remote: true) do
 		%input#hello-text{ type: "text", name: "hello_text", size: "20" }
-		%button#test-click{ type: "button"} Try Me
+		= submit_tag('Try Me', id: 'test-click')
 
 .results
